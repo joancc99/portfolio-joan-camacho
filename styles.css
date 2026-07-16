@@ -240,9 +240,10 @@ img { max-width: 100%; display: block; }
 }
 .btn--primary {
   background: var(--accent);
-  color: #0B0D0E;
+  color: var(--text);
 }
 .btn--primary:hover { background: #DB4E40; transform: translateY(-1px); }
+.btn--primary:focus-visible { outline-color: var(--text); }
 .btn--ghost {
   border-color: var(--border);
   color: var(--text);
