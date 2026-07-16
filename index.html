@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joan Camacho — Branding & Communication Strategist</title>
+<meta name="description" content="Joan Camacho. Del periodismo al branding: construyo cómo una marca se ve, se dice y se comunica al mundo.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- transmission line: a fixed hairline that fills as the reader scrolls, styled like a signal/progress wire -->
+<div class="signal-bar" aria-hidden="true"><div class="signal-fill" id="signalFill"></div></div>
+
+<header class="nav" id="siteNav">
+  <a href="#top" class="nav__mark">JC<span class="nav__mark-dot">.</span></a>
+
+  <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav__links" id="navLinks">
+    <a href="#conoceme" data-section="conoceme"><span class="nav__idx">01</span>Conóceme</a>
+    <a href="#proyectos" data-section="proyectos"><span class="nav__idx">02</span>Proyectos</a>
+    <a href="#trayectoria" data-section="trayectoria"><span class="nav__idx">03</span>Trayectoria</a>
+    <a href="#contacto" data-section="contacto"><span class="nav__idx">04</span>Contacto</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <p class="dispatch">
+        <span class="dispatch__prompt">&gt;</span>
+        <span id="typedLine"></span><span class="cursor" aria-hidden="true">_</span>
+      </p>
+
+      <h1 class="hero__title">
+        Branding &amp;<br>
+        Communication<br>
+        Strategist
+      </h1>
+
+      <p class="hero__lede">
+        Del periodismo al branding: construyo cómo una marca se ve, se dice y se comunica
+        al mundo — con el rigor de quien ha contado historias y la visión estratégica de
+        quien las convierte en identidad y resultados.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+      </div>
+
+      <p class="hero__byline">VALENCIA, ESPAÑA — SEÑAL ACTIVA</p>
+    </div>
+  </section>
+
+  <!-- ============ 01 · CONÓCEME ============ -->
+  <section class="section" id="conoceme">
+    <div class="wrap">
+      <p class="kicker" data-reveal><span class="kicker__idx">01 / 04</span><span class="kicker__rule"></span>CONÓCEME</p>
+
+      <div class="conoceme__grid">
+        <div class="conoceme__narrative" data-reveal>
+          <p>
+            Empecé contando historias — deportivas, en directo, bajo presión, en ElDesmarque.
+            Ahí aprendí lo que casi nadie enseña en marketing: cómo se construye un mensaje
+            que alguien quiere seguir. Después vinieron dos másteres en UNIR, uno en Branding
+            y otro en Marketing Digital 360, para entender cómo esa misma lógica se convierte
+            en identidad de marca y se distribuye de forma medible en digital.
+          </p>
+          <p>
+            Hoy uso esa combinación cada día en Tunergía: pienso la estrategia de comunicación
+            de una marca energética y la ejecuto yo mismo, de principio a fin — desde la
+            narrativa hasta la campaña, desde el copy hasta el dato.
+          </p>
+          <p class="conoceme__emphasis">
+            No soy periodista que aprendió marketing, ni marketer con curiosidad por contar
+            historias. Soy las dos cosas a la vez, y ese cruce es mi forma de trabajar.
+          </p>
+          <p class="conoceme__aside">
+            Fuera del horario de oficina, esa misma pasión por contar historias y construir
+            marca la vuelco en <a href="https://www.instagram.com/rap.a.lot" target="_blank" rel="noopener">Rap A Lot</a>,
+            un proyecto personal de contenido — porque el storytelling no es solo mi trabajo,
+            es también cómo entiendo el mundo.
+          </p>
+        </div>
+
+        <aside class="conoceme__side" data-reveal>
+          <!-- REEMPLAZAR: foto de perfil de Joan -->
+          <div class="portrait" role="img" aria-label="Foto de Joan Camacho — pendiente de subir">
+            <span class="portrait__placeholder">JC</span>
+          </div>
+
+          <div class="side-block">
+            <h3 class="side-block__title">Formación</h3>
+            <ul class="side-list">
+              <li><span class="side-list__main">Grado en Periodismo</span><span class="side-list__meta">UJI · 2017–2021</span></li>
+              <li><span class="side-list__main">Máster en Branding y Gestión de Marca</span><span class="side-list__meta">UNIR · 2022–2023</span></li>
+              <li><span class="side-list__main">Máster en Marketing Digital 360</span><span class="side-list__meta">UNIR · 2023–2024</span></li>
+              <li><span class="side-list__main">Fundamentals of Digital Marketing</span><span class="side-list__meta">Google Digital Academy · 2023</span></li>
+              <li><span class="side-list__main">Certificaciones adicionales</span><span class="side-list__meta">HubSpot Academy · Google</span></li>
+            </ul>
+          </div>
+
+          <div class="side-block">
+            <h3 class="side-block__title">Idiomas</h3>
+            <ul class="lang-list">
+              <li>Español <span>nativo</span></li>
+              <li>Valenciano / Catalán <span>C1</span></li>
+              <li>Inglés <span>B1</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <div class="stack" data-reveal>
+        <div class="stack__group">
+          <h3 class="stack__title">Narrativa &amp; Contenido</h3>
+          <p class="stack__items">Copywriting · Content Marketing · Canva · Figma</p>
+        </div>
+        <div class="stack__group">
+          <h3 class="stack__title">MarTech &amp; Automatización</h3>
+          <p class="stack__items">n8n (automatización de flujos orientada a resolver necesidades reales del día a día) · Odoo (CRM) · Mailchimp · HubSpot · WordPress · Webflow · Google Tag Manager</p>
+        </div>
+        <div class="stack__group">
+          <h3 class="stack__title">Growth &amp; Datos</h3>
+          <p class="stack__items">Google Analytics 4 · Google Search Console · BigQuery (nivel básico) · Meta Business Suite / Meta Ads · Google Ads · TikTok Ads · Metricool · Sales Navigator</p>
+        </div>
+        <p class="stack__note">Uso habitual de IA (Claude, ChatGPT) integrada en el flujo de trabajo diario, no como herramienta puntual.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 · PROYECTOS ============ -->
+  <section class="section section--proyectos" id="proyectos">
+    <div class="wrap">
+      <p class="kicker" data-reveal><span class="kicker__idx">02 / 04</span><span class="kicker__rule"></span>PROYECTOS</p>
+
+      <div class="cases">
+
+        <article class="case" data-reveal>
+          <div class="case__media" aria-hidden="true"><!-- REEMPLAZAR: foto Tunergía Runners --><span class="case__media-tag">TUNERGÍA RUNNERS</span></div>
+          <div class="case__body">
+            <p class="case__eyebrow">De cero a comunidad en 30 días</p>
+            <h3 class="case__title">Tunergía Runners</h3>
+            <p class="case__text">
+              Diseñé y lancé desde cero el club de running de Tunergía como estrategia de
+              activación del patrocinio de la Carrera de Empresas de Valencia, combinando
+              entrenamientos presenciales con captación digital.
+            </p>
+            <p class="case__result">
+              <span class="case__result-label">Resultado</span>
+              +200 seguidores en Instagram y +70 en Strava desde 0 en 30 días · +60 leads
+              directos por entrenamientos presenciales · +300 leads cualificados a través
+              del sorteo oficial de la carrera.
+            </p>
+          </div>
+        </article>
+
+        <article class="case" data-reveal>
+          <div class="case__media" aria-hidden="true"><!-- REEMPLAZAR: foto Tunergía és Granota --><span class="case__media-tag">TUNERGÍA ÉS GRANOTA</span></div>
+          <div class="case__body">
+            <p class="case__eyebrow">Cuando un patrocinio se convierte en identidad</p>
+            <h3 class="case__title">Tunergía és Granota</h3>
+            <p class="case__text">
+              Desarrollé la narrativa y el copywriting de la campaña que convirtió el
+              patrocinio de Tunergía al Levante UD en un símbolo de identidad local, con
+              presencia en estadio, metro de Valencia y redes sociales.
+            </p>
+            <p class="case__result">
+              <span class="case__result-label">Resultado</span>
+              Tunergía pasó de ser un patrocinador más a una marca energética reconocida y
+              cercana a la afición granota — posicionamiento, no solo visibilidad.
+            </p>
+          </div>
+        </article>
+
+        <article class="case" data-reveal>
+          <div class="case__media" aria-hidden="true"><!-- REEMPLAZAR: captura LinkedIn CEO --><span class="case__media-tag">LINKEDIN · CEO</span></div>
+          <div class="case__body">
+            <p class="case__eyebrow">Estrategia editorial de principio a fin</p>
+            <h3 class="case__title">Marca personal del CEO — LinkedIn</h3>
+            <p class="case__text">
+              Definí la estrategia y la línea editorial completa de la marca personal de
+              Pepe Córdoba, CEO de Tunergía, en LinkedIn — tono directo, contenido de
+              autoridad orientado a simplificar la comunicación y cuestionar el exceso de
+              reuniones — además de redactar cada publicación.
+            </p>
+            <p class="case__result">
+              <span class="case__result-label">Resultado</span>
+              Crecimiento sostenido hasta 3.941 seguidores mediante contenido de autoridad,
+              no de relleno corporativo.
+            </p>
+          </div>
+        </article>
+
+        <article class="case" data-reveal>
+          <div class="case__media" aria-hidden="true"><!-- REEMPLAZAR: fotograma documental José / DANA --><span class="case__media-tag">L'ENERGIA DEL POBLE</span></div>
+          <div class="case__body">
+            <p class="case__eyebrow">Cuando el periodismo se pone al servicio de una causa</p>
+            <h3 class="case__title">L'Energia del Poble — documental sobre José (DANA)</h3>
+            <p class="case__text">
+              Grabé, edité y produje un reportaje audiovisual sobre José, afectado por la
+              DANA, como pieza central de una campaña de recaudación de fondos que incluyó
+              también flyers y vídeo promocional en el estadio del Levante UD, email
+              marketing y redes.
+            </p>
+            <p class="case__result">
+              <span class="case__result-label">Resultado</span>
+              El contenido conectó emocionalmente con la comunidad valenciana y canalizó la
+              donación recaudada directamente hacia los afectados — storytelling con
+              impacto real, no solo alcance.
+            </p>
+          </div>
+        </article>
+
+        <article class="case" data-reveal>
+          <div class="case__media" aria-hidden="true"><!-- REEMPLAZAR: foto contenido RRSS Tunergía --><span class="case__media-tag">COMUNICACIÓN &amp; RRSS</span></div>
+          <div class="case__body">
+            <p class="case__eyebrow">Gestión autónoma de marca, desde noviembre de 2023</p>
+            <h3 class="case__title">Comunicación y RRSS de Tunergía</h3>
+            <p class="case__text">
+              Como responsable de comunicación y redes de Tunergía, gestiono de forma
+              autónoma la estrategia de contenido, copywriting, SEO/SEM y email marketing
+              de la marca.
+            </p>
+            <p class="case__result">
+              <span class="case__result-label">Resultado</span>
+              Crecimiento sostenido hasta superar los 2.200 seguidores en Instagram,
+              consolidando la presencia digital de la empresa en el sector energético
+              valenciano.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · TRAYECTORIA ============ -->
+  <section class="section" id="trayectoria">
+    <div class="wrap">
+      <p class="kicker" data-reveal><span class="kicker__idx">03 / 04</span><span class="kicker__rule"></span>TRAYECTORIA</p>
+
+      <ol class="timeline">
+        <li class="timeline__item" data-reveal>
+          <div class="timeline__date">
+            <span class="timeline__range">NOV. 2023 — ACTUALIDAD</span>
+            <span class="timeline__place">Valencia</span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Tunergía</h3>
+            <p class="timeline__dept">Dpto. Marketing y Comunicación</p>
+            <h4 class="timeline__sub">Funciones</h4>
+            <ul class="timeline__list">
+              <li>Gestioné de forma autónoma la comunicación, redes sociales, SEO/SEM y email marketing de la marca.</li>
+              <li>Lideré campañas propias de principio a fin: Tunergía és Granota y Tunergía Runners.</li>
+              <li>Diseñé la estrategia editorial de la marca personal del CEO en LinkedIn.</li>
+            </ul>
+            <h4 class="timeline__sub">Logros</h4>
+            <ul class="timeline__list">
+              <li>Hice crecer Instagram hasta superar los 2.200 seguidores mediante estrategia de contenido propia.</li>
+              <li>Activé el patrocinio de la Carrera de Empresas de Valencia generando +560 leads (directos + cualificados) en su primer mes.</li>
+              <li>Convertí un patrocinio deportivo (Levante UD) en un activo de marca reconocible localmente.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item" data-reveal>
+          <div class="timeline__date">
+            <span class="timeline__range">MAR. 2023 — NOV. 2023</span>
+            <span class="timeline__place">Agencia de publicidad y marketing digital</span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Grupo M Martín y Manuel</h3>
+            <p class="timeline__dept">Marketing Digital</p>
+            <h4 class="timeline__sub">Funciones</h4>
+            <ul class="timeline__list">
+              <li>Colaboré en el desarrollo de presencia online y estrategias SEO/SEM para clientes de la agencia.</li>
+              <li>Formé parte del equipo en el proyecto de Dehesa de la Albufera (producto D.O., arroces), que alcanzó la posición #1 en Google y entró en Amazon con crecimiento de ventas de doble dígito.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item" data-reveal>
+          <div class="timeline__date">
+            <span class="timeline__range">JUN. 2021 — MAR. 2022</span>
+            <span class="timeline__place">Valencia</span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">ElDesmarque Valencia</h3>
+            <p class="timeline__dept">Periodista</p>
+            <h4 class="timeline__sub">Funciones</h4>
+            <ul class="timeline__list">
+              <li>Cubrí ruedas de prensa, partidos y entrenamientos del ámbito deportivo valenciano.</li>
+              <li>Redacté noticias y entrevistas, tanto en formato escrito como audiovisual.</li>
+              <li>Realicé locución para piezas audiovisuales.</li>
+            </ul>
+            <p class="timeline__aside">La base periodística que hoy sostiene mi forma de contar marcas.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 04 · CONTACTO ============ -->
+  <section class="section section--contact" id="contacto">
+    <div class="wrap">
+      <p class="kicker" data-reveal><span class="kicker__idx">04 / 04</span><span class="kicker__rule"></span>CONTACTO</p>
+
+      <div class="contact" data-reveal>
+        <h2 class="contact__title">¿Hablamos?</h2>
+        <p class="contact__lede">
+          Si crees que puedo aportar a tu agencia, tu marca o tu equipo, hablemos sin rodeos.
+        </p>
+
+        <div class="contact__links">
+          <a href="mailto:joancamacho1999@gmail.com" class="contact__link">
+            <span class="contact__link-label">Email</span>
+            <span class="contact__link-value">joancamacho1999@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/joan-camacho-/" target="_blank" rel="noopener" class="contact__link">
+            <span class="contact__link-label">LinkedIn</span>
+            <span class="contact__link-value">linkedin.com/in/joan-camacho-</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>© <span id="year"></span> Joan Camacho</span>
+    <span>Valencia, España</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
