@@ -655,32 +655,44 @@ img { max-width: 100%; display: block; }
 @media (max-width: 480px) {
   .footer__inner { flex-direction: column; gap: 0.4rem; }
 }
-
 /* ======================================================
    AÑADIR ESTE BLOQUE AL FINAL DE styles.css
    (fotos reales en Conóceme y en las tarjetas de Proyectos,
    imágenes intercaladas en Runners/Granota, y enlaces a vídeo)
    ====================================================== */
 
-/* Foto real dentro del bloque .case__media de cada tarjeta */
+/* Bloque de la foto principal de cada tarjeta: ya no recorta la imagen,
+   la altura del bloque se ajusta a la proporción real de la foto */
+.case__media {
+  padding: 0;
+  min-height: 0;
+  align-items: stretch;
+}
+
 .case__media-img {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  height: auto;
+}
+
+/* La retícula decorativa del placeholder ya no hace falta con fotos reales
+   (y al ser un pseudo-elemento posicionado, pintaría por encima de la foto) */
+.case__media::before {
+  display: none;
 }
 
 .case__media-tag {
-  position: relative;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
   z-index: 2;
   background: rgba(11, 13, 14, 0.72);
   padding: 0.3rem 0.6rem;
   border-radius: var(--radius);
 }
 
-/* Foto de perfil real en Conóceme */
+/* Foto de perfil real en Conóceme (aquí sí mantenemos el recorte 4:5,
+   es un marco de retrato intencionado, no una foto de proyecto) */
 .portrait img {
   width: 100%;
   height: 100%;
@@ -688,21 +700,18 @@ img { max-width: 100%; display: block; }
   border-radius: calc(var(--radius) - 1px);
 }
 
-/* Segunda foto intercalada en el texto (Runners y Granota),
-   separada del media principal por el propio párrafo de texto */
-.case__inline-media {
-  margin: 1.5rem 0;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  aspect-ratio: 16 / 10;
+/* Segunda foto de Runners/Granota: ocupa todo el ancho de la tarjeta,
+   debajo de la fila foto+texto, también a su proporción real sin recortar */
+.case__media-end {
+  grid-column: 1 / -1;
+  margin: 0;
+  border-top: 1px solid var(--border);
 }
 
-.case__inline-media img {
+.case__media-end img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 /* Enlace a vídeo de YouTube: miniatura + icono de play + etiqueta */
