@@ -788,3 +788,19 @@ img { max-width: 100%; display: block; }
     transition: none;
   }
 }
+/* FIX del estiramiento de fotos en las tarjetas de proyecto:
+   la regla .case__media de más arriba tenía "align-items: stretch",
+   que forzaba a la imagen a estirarse verticalmente para rellenar
+   la altura de la columna de texto, deformando la foto. Con
+   "flex-start" la foto conserva su proporción real y se alinea
+   arriba del bloque, dejando el resto del espacio con el fondo
+   degradado de siempre. */
+.case__media {
+  align-items: flex-start;
+}
+
+/* Tarjeta de proyecto sin foto (p.ej. Automatización de contenido
+   con IA): ocupa todo el ancho, sin columna de medios */
+.case--text-only {
+  grid-template-columns: 1fr;
+}
