@@ -189,6 +189,26 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 300px);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.hero__photo {
+  margin: 0;
+}
+.hero__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
 .dispatch {
   font-family: var(--f-mono);
   font-size: 0.85rem;
@@ -733,6 +753,8 @@ img { max-width: 100%; display: block; }
   .timeline__item { grid-template-columns: 1fr; }
   .timeline::before,
   .timeline__item::before { display: none; }
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__photo { max-width: 200px; order: -1; margin-bottom: 1.5rem; }
 }
 
 @media (max-width: 480px) {
@@ -756,6 +778,13 @@ img { max-width: 100%; display: block; }
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* Cuando la foto de la tarjeta va envuelta en un enlace (p.ej. Behance),
+   el propio <a> debe ocupar todo el ancho para que la imagen no se encoja */
+.case__media > a {
+  display: block;
+  width: 100%;
 }
 
 /* La retícula decorativa del placeholder ya no hace falta con fotos reales
